@@ -2,28 +2,11 @@
 
 ## AI-Powered Autonomous Search & Rescue System
 
-<p align="center">
-
 **Smart India Hackathon 2026 • Problem Statement 26177**
 
-</p>
-
-<p align="center">
-
-<i>
-An intelligent, deployable drone-based search-and-rescue ecosystem
-designed to assist emergency teams in detecting potential survivors,
-identifying hazards, locating critical events, and visualizing mission
-intelligence.
-</i>
-
-</p>
-
-<p align="center">
+> An intelligent, deployable drone-based search-and-rescue ecosystem designed to assist emergency teams in detecting potential survivors, identifying hazards, locating critical events, and visualizing mission intelligence.
 
 `Artificial Intelligence` • `Computer Vision` • `Autonomous Drones` • `GPS` • `Telemetry` • `Robotics`
-
-</p>
 
 ---
 
@@ -31,7 +14,7 @@ intelligence.
 
 During disasters such as **floods, landslides, forest fires and other emergency situations**, rescue teams often operate in environments where conventional ground-based search becomes difficult, slow and potentially hazardous.
 
-### Major Challenges
+## Major Challenges
 
 -  Large and difficult-to-access disaster areas
 -  Poor visibility and unpredictable environmental conditions
@@ -50,7 +33,7 @@ Traditional ground-based operations may require significant time and manpower to
 
 **SKY P@TROL** is an AI-assisted drone-based search-and-rescue ecosystem that combines:
 
--  A physical multi-rotor drone platform
+-  Physical multi-rotor drone platform
 -  Aerial image acquisition
 -  AI-assisted computer vision
 -  GPS-based location intelligence
@@ -60,7 +43,7 @@ Traditional ground-based operations may require significant time and manpower to
 
 The system transforms aerial observations into structured information that can support emergency response teams.
 
-### Core Workflow
+## Core Workflow
 
 ```text
 SEARCH
@@ -139,7 +122,7 @@ Our solution is supported by a physical multi-rotor prototype developed for aeri
 
 ---
 
-##  Drone Prototype — Side View
+## Drone Prototype — Side View
 
 <p align="center">
   <img src="photos/drone-side.jpeg" width="90%" alt="SKY P@TROL Drone Side View">
@@ -151,7 +134,7 @@ Our solution is supported by a physical multi-rotor prototype developed for aeri
 
 ---
 
-##  Flight Electronics & Power System
+## Flight Electronics & Power System
 
 <p align="center">
   <img src="photos/drone.jpeg" width="90%" alt="SKY P@TROL Flight Electronics">
@@ -163,12 +146,12 @@ Our solution is supported by a physical multi-rotor prototype developed for aeri
 
 ---
 
-# 🎮 Ground Control
+#  Ground Control
 
 The drone is operated and monitored using a dedicated radio-control system during prototype flight operations and testing.
 
 <p align="center">
-  <img src="photos/remote.jpeg" width="65%" alt="SKY P@TROL Ground Controller">
+  <img src="photos/remote.jpeg" width="70%" alt="SKY P@TROL Ground Controller">
 </p>
 
 <p align="center">
@@ -215,7 +198,7 @@ The system is designed to identify and log:
                      ┌───────┴───────┐
                      ▼               ▼
               ┌────────────┐   ┌────────────┐
-              │   PERSON   │   │  Hazard    │
+              │   PERSON   │   │   HAZARD   │
               │  DETECTION │   │  DETECTION │
               └─────┬──────┘   └──────┬─────┘
                     │                 │
@@ -243,13 +226,66 @@ The Ground Command Center acts as the central software interface for monitoring 
 
 It converts telemetry and detection events into a structured operational view.
 
+## Ground Command Center Dashboard
+
+The dashboard provides a centralized interface for monitoring:
+
+-  Drone location
+-  Person detection events
+-  Fire / smoke events
+-  Active alerts
+   Live mission map
+-  Mission statistics
+-  Detection history
+-  Real-time telemetry
+-  Search and filtering
+-  Alert acknowledgement and resolution
+
+### Main Dashboard
+
+<p align="center">
+  <img src="photos/dashboard1.png" width="100%" alt="SKY P@TROL Ground Command Center Dashboard">
+</p>
+
+<p align="center">
+  <b>SKY P@TROL — Ground Command Center Dashboard</b>
+</p>
+
+The main command-center interface provides a unified operational view of drone position, detected persons, hazard events, active alerts and detection history.
+
+---
+
+## Mission Intelligence Summary
+
+The dashboard also provides a mission intelligence summary containing aggregated detection information and geographic search bounds.
+
+<p align="center">
+  <img src="photos/dashboard2.png" width="90%" alt="SKY P@TROL Mission Intelligence Summary">
+</p>
+
+<p align="center">
+  <b>Mission Intelligence Summary</b>
+</p>
+
+The summary interface presents:
+
+- Total detection events
+- Person detection events
+- Fire / smoke events
+- Geographic search bounds
+- Latest telemetry record
+- Operational mode
+- Detection statistics
+
+---
+
 ##  Core Capabilities
 
 | Feature | Function |
 |---|---|
 |  Location Intelligence | Displays geo-tagged observations |
 |  Person Detection | Records person/potential-person detection events |
-|  Hazard Detection | Logs fire, smoke, flood and landslide observations |
+|  Hazard Detection | Logs fire, smoke and other hazard observations |
 |  Drone Monitoring | Identifies active drone sources |
 |  Alert Management | Organizes important detection events |
 |  Map Visualization | Displays observations geographically |
@@ -274,7 +310,7 @@ It converts telemetry and detection events into a structured operational view.
                   │ ON-BOARD / EDGE AI   │
                   │                      │
                   │ Person Detection     │
-                  │ Fire / Smoke         │
+                  │ Hazard Detection     │
                   └──────────┬───────────┘
                              │
                              ▼
@@ -369,7 +405,8 @@ This structure allows the system to distinguish live operational data from testi
 - YOLO-based computer vision pipeline
 - Aerial image analysis
 - Person detection
-- Harzard detection
+- Hazard detection
+- Real-time detection event processing
 
 ##  Drone & Embedded Systems
 
@@ -424,7 +461,7 @@ The drone provides an aerial observation layer for areas that may be difficult o
 
 ##  2. AI-Assisted Detection
 
-Computer vision assists in identifying people and fire/smoke-related observations from aerial imagery.
+Computer vision assists in identifying people and hazard-related observations from aerial imagery.
 
 ##  3. GPS-Based Localization
 
@@ -473,6 +510,7 @@ TIMESTAMP   : YYYY-MM-DD HH:MM:SS
 - Mission statistics
 - Backend communication
 - Dashboard workflows
+- Telemetry handling
 
 ---
 
@@ -514,7 +552,7 @@ Rapid observation of difficult terrain following landslides.
 
 ###  Forest-Fire Monitoring
 
-Detection and monitoring of fire/smoke observations.
+Detection and monitoring of fire and smoke observations.
 
 ###  Missing-Person Search
 
@@ -543,11 +581,11 @@ Remote observation of environments that may pose risks to personnel.
                AREA OBSERVATION
                       │
                       ▼
-               AI PROCESSING
+                AI PROCESSING
                       │
             ┌─────────┴─────────┐
             ▼                   ▼
-        PERSON               Hazard
+        PERSON               HAZARD
        DETECTION             DETECTION
             │                   │
             └─────────┬─────────┘
@@ -590,17 +628,9 @@ Future extensions may include:
 
 ---
 
-
-
-# 🏆 SMART INDIA HACKATHON 2026
-
-<p align="center">
-
-### 🇮🇳 SMART INDIA HACKATHON 2026
+#  SMART INDIA HACKATHON 2026
 
 **Problem Statement: PS 26177**
-
-</p>
 
 SKY P@TROL has been developed as a practical technology platform for AI-assisted search-and-rescue operations.
 
@@ -624,13 +654,7 @@ The project brings together:
 
 ---
 
-
-
-
-
-
-
-# 🧭 PROJECT ROADMAP
+#  PROJECT ROADMAP
 
 ```text
                     SKY P@TROL
@@ -644,7 +668,7 @@ The project brings together:
    Flight Platform   Detection       Live Dashboard
         │                │                │
         ▼                ▼                ▼
-   GPS + Camera      Person/Fire     Map + Alerts
+   GPS + Camera      Person/Hazard   Map + Alerts
         │                │                │
         └────────────────┼────────────────┘
                          ▼
@@ -656,7 +680,7 @@ The project brings together:
 
 ---
 
-# 👥 TEAM
+#  TEAM
 
 ## SKY P@TROL Team
 
@@ -667,34 +691,50 @@ The project brings together:
 - **Deepanshu**
 - **Sawan**
 
-### 🏫 Institution
+---
+
+##  Institution
 
 **Panipat Institute of Engineering and Technology (PIET)**
 
-### 🇮🇳 Hackathon
+---
+
+## 🇮🇳 Hackathon
 
 **Smart India Hackathon 2026**
 
+**Problem Statement — PS 26177**
+
 ---
 
+#  PROJECT VISION
 
-# ⭐ PROJECT VISION
-
-> **SEE FARTHER. DETECT FASTER. RESCUE SMARTER.**
+> ## SEE FARTHER. DETECT FASTER. RESCUE SMARTER.
 
 SKY P@TROL aims to provide emergency-response teams with an aerial layer of situational awareness by combining:
 
+```text
+ AERIAL INTELLIGENCE
+        +
+ ARTIFICIAL INTELLIGENCE
+        +
+ LOCATION INTELLIGENCE
+        +
+ REAL-TIME TELEMETRY
+        +
+ COMMAND CENTER
+        =
+ RESCUE DECISION SUPPORT
+```
 
-## 🛰️ SKY P@TROL
+---
+
+#  SKY P@TROL
 
 ### AI • Autonomous Drones • Computer Vision • Robotics • Rescue Intelligence
 
 **Smart India Hackathon 2026 • PS 26177**
 
-</p>
+> **Built to Search. Designed to Assist. Engineered to Rescue.**
 
-<p align="center">
-
-<b>Built to Search. Designed to Assist. Engineered to Rescue.</b>
-
-</p>
+---

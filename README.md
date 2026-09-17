@@ -118,7 +118,7 @@ The modular design allows additional sensors and payloads to be integrated as th
 <b>Multi-Rotor Drone Prototype — Top View</b>
 
 </p>
-<p align="center"> <img src="photos/drone side.jpeg" width="90%" alt="SKY P@TROL Drone Top View"> </p> <p align="center">
+<p align="center"> <img src="photos/drone-side.jpeg" width="90%" alt="SKY P@TROL Drone Top View"> </p> <p align="center">
 
 <b>Multi-Rotor Drone Prototype — Side View</b>
 

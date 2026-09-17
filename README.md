@@ -1,54 +1,120 @@
-# SK¥_P@TROL — AI Search & Rescue Ground Command Center (Stage 3)
+# 🛰️ SKY P@TROL
 
-**Smart India Hackathon 2026 (PS 26177)**  
-*Deployable AI-powered autonomous drone system for search-and-rescue operations.*
+## AI-Powered Autonomous Search & Rescue System
 
----
+<p align="center">
 
-## 🛰️ System Scope & Principles
+**Smart India Hackathon 2026 • Problem Statement 26177**
 
-Stage 3 is the **Ground Command Center**, responsible for receiving telemetry observations from the Stage 1 Airborne Drone & Stage 2 On-Board Intelligence and converting them into actionable rescue intelligence.
+</p>
 
-### Data Scope
-The Ground Command Center processes real incoming telemetry parameters:
-1. `latitude`
-2. `longitude`
-3. `personDetected` (boolean)
-4. `fireDetected` (boolean)
-5. `timestamp`
-6. `droneId`
-7. `source` (`LIVE` vs `SIMULATION`)
-8. `status` (`ACTIVE` / `ACKNOWLEDGED` / `RESOLVED`)
+<p align="center">
 
-### UI Aesthetics & Rescue Terminology
-- **High-Density Tactical UI**: Emergency operations center dark palette (`#080c14`), cartographic dark basemaps, high-contrast monospace indicators, zero clutter.
-- **Accurate Terminology**:
-  - Person detection is logged as **"Person Detected"** / **"Potential Person Detected"** (YOLO detection does not confirm survivor status).
-  - Fire detection is logged as **"Fire/Smoke Detected"**.
-  - Metrics reflect **Detection Log Events**, not unique objects/people.
+<i>
+An intelligent, deployable drone-based search-and-rescue ecosystem
+designed to assist emergency teams in detecting potential survivors,
+identifying fire/smoke hazards, locating critical events, and
+visualizing mission intelligence in real time.
+</i>
+
+</p>
+
+<p align="center">
+
+`Artificial Intelligence` • `Computer Vision` • `Autonomous Drones` • `GPS` • `Telemetry` • `Robotics`
+
+</p>
 
 ---
 
-## 🛠️ Technology Stack
-- **Frontend**: React 18, Vite, TypeScript, TailwindCSS, Leaflet / React-Leaflet, Lucide Icons, Socket.IO Client.
-- **Backend**: Node.js, Express.js, TypeScript, Mongoose, Socket.IO Server.
-- **Database**: MongoDB with automatic in-memory fallback.
+# 🚨 Problem Statement
+
+During disasters such as **floods, landslides, forest fires and other emergency situations**, rescue teams often operate in environments where conventional ground-based search becomes difficult, slow and potentially hazardous.
+
+### Major Challenges
+
+- 🌊 Large and difficult-to-access disaster areas
+- 🌫️ Poor visibility and unpredictable environmental conditions
+- 👤 Difficulty in locating people in affected regions
+- ⏱️ Delayed identification of critical situations
+- ⚠️ Risk to rescue personnel entering hazardous zones
+- 📡 Scattered field information
+- 🗺️ Lack of centralized situational awareness
+- 🚁 Limited aerial intelligence during emergency response
+
+Traditional ground-based operations may require significant time and manpower to search large or inaccessible regions.
 
 ---
 
-## 🚀 Running the Project
+# 💡 Our Solution
 
-```bash
-# 1. Install dependencies
-npm run install:all
+**SKY P@TROL** is an AI-assisted drone-based search-and-rescue ecosystem that combines:
 
-# 2. Run Backend (Terminal 1)
-cd server
-npm run dev
+- 🛩️ A physical multi-rotor drone platform
+- 📷 Aerial image acquisition
+- 🧠 AI-assisted computer vision
+- 📍 GPS-based location intelligence
+- 📡 Telemetry and communication
+- 🖥️ Ground Command Center
+- 🚨 Detection and alert management
 
-# 3. Run Frontend (Terminal 2)
-cd client
-npm run dev
-```
+The system transforms aerial observations into structured information that can support emergency response teams.
 
-Open `http://localhost:5173` to access the Command Center.
+### Core Workflow
+
+```text
+SEARCH
+   ↓
+DETECT
+   ↓
+LOCATE
+   ↓
+ANALYZE
+   ↓
+VISUALIZE
+   ↓
+RESPOND
+
+🛰️ System Architecture
+
+SKY P@TROL is organized into three major stages.
+```text
+┌─────────────────────────────────────────────────────────────┐
+│                    SKY P@TROL ECOSYSTEM                     │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  STAGE 1              STAGE 2              STAGE 3          │
+│  AIRBORNE             ON-BOARD             GROUND           │
+│  PLATFORM             INTELLIGENCE         COMMAND CENTER   │
+│                                                             │
+│  Drone Platform   →   AI Detection     →   Rescue Dashboard│
+│  GPS / Telemetry      Person Detection     Live Location   │
+│  Camera               Hazard Detection         Alerts & Logs│
+│  Flight System        Data Processing      Mission View   │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+
+🛩️ STAGE 1 — DRONE PLATFORM
+
+The airborne layer provides the physical aerial platform required for disaster-area reconnaissance and observation.
+
+Hardware Components
+Multi-rotor drone frame
+Brushless motors
+Propulsion system
+Flight controller
+Power distribution system
+GPS subsystem
+Camera interface
+Telemetry system
+Radio-control system
+Rechargeable battery system
+Expandable payload architecture
+
+The modular design allows additional sensors and payloads to be integrated as the project evolves.
+
+<p align="center"> <img src="photos/drone-top.png" width="90%" alt="SKY P@TROL Drone Top View"> </p> <p align="center">
+
+<b>Multi-Rotor Drone Prototype — Top View</b>
+
+</p>
